@@ -6,9 +6,8 @@ def create_mlp_model():
         nn.Flatten(),
         nn.Linear(28 * 28, 256),
         nn.ReLU(),
-        nn.Linear(256, 100),
+        nn.Linear(256, 128),
         nn.ReLU(),
-        nn.Linear(100, 10),
+        nn.Linear(128, 10),
     )
-
     return first_model
